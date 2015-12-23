@@ -25,7 +25,7 @@ get_most_nums = (combs, number) ->
   Number num for num in sort.filter (e, i) -> i < number
 
 combinations = []
-most = 13
+most = 24#4x6
 most_nums = get_most_nums (feed "combs"), most
 
 rand = (min, max) ->
@@ -55,8 +55,5 @@ most_nums_combination = (combs, most_nums) ->
 
 for i in [0..3]
   combinations[i] = random_combination(combinations)
-#combinations[1] = most_combinations_combination(combinations, most_combinations)
-#combinations[2] = most_nums_combination(combinations, most_nums)
-#combinations[3] = hybrid_combination(combinations, most_combinations, most_nums)
 
 console.log combinations
